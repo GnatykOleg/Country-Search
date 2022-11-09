@@ -28,4 +28,4 @@
 
 #### 13. Adaptive design to mobile, table, desktop.
 
-![Screen](./src/images/Screenshots/screen-first.jpg)
+
