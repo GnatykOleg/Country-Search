@@ -1,4 +1,3 @@
-// import './css/styles.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import debounce from 'lodash.debounce';
 import { fetchCountries } from './fetchCountries.js';
@@ -44,7 +43,7 @@ function onInputFn(event) {
 function renderPreview(data) {
   return data
     .map(({ name, flags }) => {
-      return `<li><img src="${flags.png}" alt="${name.official}" width="60" height="40">${name.official}</li>`;
+      return `<li><img src="${flags.png}" alt="${name.official}"  ><p>${name.official}</p></li>`;
     })
     .join('');
 }
@@ -53,10 +52,10 @@ function renderCountryCard(data) {
   return data
     .map(({ name, capital, population, flags, languages }) => {
       return `
-      <li class="item"><img src="${flags.png}" alt="${
+      <li><img src="${flags.png}" alt="${name.official}"><span>${
         name.official
-      }" width="60" height="40" ><span>${name.official}</span></li>
-      <li><p><b>Capital:</b> ${capital}</p></li> <li><p><b>Population</b>: ${population}</p></li><li><p><b>Languages:</b> ${Object.values(
+      }</span>
+      <p><b>Capital:</b> ${capital}</p> <p><b>Population</b>: ${population}</p><p><b>Languages:</b> ${Object.values(
         languages
       )}</p> 
         </li>`;
