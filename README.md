@@ -28,4 +28,4 @@
 
 #### 13. Adaptive design to mobile, table, desktop.
 
-
+#### 14. Using Pure JavaScript, SCSS, HTML.
