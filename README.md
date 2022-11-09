@@ -29,3 +29,7 @@
 #### 13. Adaptive design to mobile, table, desktop.
 
 #### 14. Using Pure JavaScript, SCSS, HTML.
+
+![country](./src/images/countrys.jpg)
+
+![country-info](./src/images/country-info.jpg)
